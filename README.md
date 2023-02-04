@@ -19,4 +19,10 @@
 ## New topic
 ![](.README_images/99c5acaf.png)
 ![](.README_images/6e32c439.png)
+![](.README_images/0f5a3640.png)
+![](.README_images/ed35fe38.png)
 
+## New entry
+![](.README_images/31e27ea5.png)
+![](.README_images/1c49fd28.png)
+![](.README_images/cbcdd5f2.png)

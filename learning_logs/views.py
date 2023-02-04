@@ -3,7 +3,7 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 
 from .models import Topic
-from .forms import TopicForm
+from .forms import TopicForm, EntryForm
 
 
 # Create your views here.
@@ -42,3 +42,24 @@ def new_topic(request):
 
     context = {'form': form}
     return render(request, 'learning_logs/new_topic.html', context)
+
+
+def new_entry(request, topic_id):
+    """在特定的主题中添加新条目"""
+    topic = Topic.objects.get(id=topic_id)
+
+    if request.method != 'POST':
+        form = EntryForm()
+    else:
+        form = EntryForm(data=request.POST)
+        if form.is_valid():
+            # 创建新的条目对象时，将其存储到new_entry 中，不将它保存到数据库
+            new_entry = form.save(commit=False)
+            new_entry.topic = topic
+            new_entry.save()
+            # args，要包含在URL 中的实参topic_id
+            return HttpResponseRedirect(reverse('learning_logs:topic',
+                                                args=[topic_id]))
+
+    context = {'topic': topic, 'form': form}
+    return render(request, 'learning_logs/new_entry.html', context)
