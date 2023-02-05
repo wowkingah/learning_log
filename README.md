@@ -70,3 +70,7 @@ $ python manage.py runserver 0.0.0.0:8000
    <img src=".README_images/8f3b008f.png" width = "49%">
    <img src=".README_images/1a51b23c.png" width = "49%">
 </div>
+
+## 只允许用户访问自己的主题
+![](.README_images/bfde018b.png)
+
