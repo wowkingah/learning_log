@@ -77,3 +77,7 @@ $ python manage.py runserver 0.0.0.0:8000
    <img src=".README_images/a1553f91.png" width = "49%">
 </div>
 
+<div align="center">
+   <img src=".README_images/4d61c34d.png" width = "49%">
+   <img src=".README_images/8413085b.png" width = "49%">
+</div>
