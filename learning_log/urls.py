@@ -18,5 +18,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('learning_logs.urls')),
+    # 使用 namespace 区分应用程序 learning_logs 与 users 的 URL
+    path('users/', include(('users.urls', 'users'), namespace='users')),
+    path('', include(('learning_logs.urls', 'learning_logs'),
+                     namespace='learning_logs')),
 ]
