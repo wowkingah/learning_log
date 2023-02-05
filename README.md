@@ -72,5 +72,8 @@ $ python manage.py runserver 0.0.0.0:8000
 </div>
 
 ## 只允许用户访问自己的主题
-![](.README_images/bfde018b.png)
+<div align="center">
+   <img src=".README_images/bfde018b.png" width = "49%">
+   <img src=".README_images/a1553f91.png" width = "49%">
+</div>
 
