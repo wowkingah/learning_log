@@ -7,12 +7,12 @@
   {% endif %}
 
   <form method="post" action="{% url 'users:login' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
+    {% csrf_token %}
+    {{ form.as_p }}
 
-  <button name="submit">log in</button>
+    <button name="submit">log in</button>
 {# next 隐藏的表单元素，其实参 value 告诉 Django 在用户成功登录后将其重定向到什么地方 #}
-  <input type="hidden" name="next" value="{% url 'learning_logs:index' %}" />
+    <input type="hidden" name="next" value="{% url 'learning_logs:index' %}" />
   </form>
 
 {% endblock content %}

@@ -50,3 +50,10 @@
    <img src=".README_images/5f9d4864.png" width = "49%">
    <img src=".README_images/679ca9b2.png" width = "49%">
 </div>
+
+## User register
+![](.README_images/3cae7aad.png)
+<div align="center">
+   <img src=".README_images/8f3b008f.png" width = "49%">
+   <img src=".README_images/1a51b23c.png" width = "49%">
+</div>
