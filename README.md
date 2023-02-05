@@ -6,6 +6,19 @@
 - Django 4.0.1
 - PyCharm 2022.2.2
 
+# Running
+```shell
+# install
+$ pip3 install -r requirements.txt
+
+# running
+$ python manage.py runserver 0.0.0.0:8000
+
+# Login
+## admin/123456
+## test1/Ab@123456
+```
+
 # Screenshot
 ## Index
 ![](.README_images/48ca9253.png)
