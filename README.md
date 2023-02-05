@@ -26,3 +26,7 @@
 ![](.README_images/31e27ea5.png)
 ![](.README_images/1c49fd28.png)
 ![](.README_images/cbcdd5f2.png)
+
+## Edit entry
+![](.README_images/eb05b0aa.png)
+![](.README_images/d37ab210.png)
