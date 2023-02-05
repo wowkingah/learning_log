@@ -4,6 +4,7 @@
 # ENV
 - Python 3.9.1
 - Django 4.0.1
+- Django-bootstrap4 22.3
 - PyCharm 2022.2.2
 
 # Running
@@ -18,6 +19,11 @@ $ python manage.py runserver 0.0.0.0:8000
 ## admin/123456
 ## test1/Ab@123456
 ```
+
+# Bootstrap
+- Navbar static
+  - [Navbar docs](https://getbootstrap.com/docs/4.6/components/navbar/)
+
 
 # Screenshot
 ## Index
@@ -80,4 +86,22 @@ $ python manage.py runserver 0.0.0.0:8000
 <div align="center">
    <img src=".README_images/4d61c34d.png" width = "49%">
    <img src=".README_images/8413085b.png" width = "49%">
+</div>
+
+## Bootstrap4
+<div align="center">
+   <img src=".README_images/e2eaa5da.png" width = "49%">
+   <img src=".README_images/8f90f0d1.png" width = "49%">
+</div>
+
+<div align="center">
+   <img src=".README_images/78cf253c.png" width = "33%">
+   <img src=".README_images/91faea03.png" width = "33%">
+   <img src=".README_images/21cd8aaf.png" width = "33%">
+</div>
+
+<div align="center">
+   <img src=".README_images/9210d9da.png" width = "33%">
+   <img src=".README_images/897a209d.png" width = "33%">
+   <img src=".README_images/7c5a41ff.png" width = "33%">
 </div>

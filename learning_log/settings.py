@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap4',
     'learning_logs',
     'users',
 ]
@@ -127,3 +128,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # LOGIN
 LOGIN_URL = '/users/login/'
+
+# django-bootstrap5 设置
+BOOTSTRAP4 = {
+    # 无需手工下载 jQuery 并将其放到正确的地方
+    'include_jquery': True,
+}

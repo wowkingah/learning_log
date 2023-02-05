@@ -1,14 +1,64 @@
-<p>
-  <a href="{% url 'learning_logs:index' %}">Learning Log</a> -
-  <a href="{% url 'learning_logs:topics' %}">Topics</a> -
-{#  user.is_authenticated 属性，已登录为 True #}
-  {% if user.is_authenticated %}
-    Hello, {{ user.username }}.
-    <a href="{% url 'users:logout' %}">log out</a>
-  {% else %}
-    <a href="{% url 'users:register' %}">register</a> -
-    <a href="{% url 'users:login' %}">log in</a>
-  {% endif %}
-</p>
+{#加载 Bootstrap 标签集#}
+{% load bootstrap4 %}
 
-{% block content %}{% endblock content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+
+    <title>Learning Log</title>
+
+    <!-- 让 Django 包含所有的 Bootstrap 样式文件 -->
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+  </head>
+
+  <!-- 定义导航栏 -->
+  <body>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="{% url 'learning_logs:index' %}">
+         Learning Logs</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'learning_logs:topics' %}">Topics</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+           {% if user.is_authenticated %}
+              <li><a class="nav-link">Hello, {{ user.username }}.</a></li>
+              <li><a class="nav-link" href="{% url 'users:logout' %}">log out</a></li>
+            {% else %}
+              <li><a class="nav-link" href="{% url 'users:register' %}">register</a></li>
+              <li><a class="nav-link" href="{% url 'users:login' %}">log in</a></li>
+            {% endif %}
+        </ul>
+      </div>
+
+    </nav>
+
+    <div class="container">
+      <div class="page-header">
+        {% block header %}{% endblock header %}
+        <hr class="my-4">
+      </div>
+      <div>
+        {% block content %}{% endblock content %}
+      </div>
+    </div> <!-- /container -->
+
+  </body>
+</html>
