@@ -95,13 +95,16 @@ $ python manage.py runserver 0.0.0.0:8000
 </div>
 
 <div align="center">
-   <img src=".README_images/78cf253c.png" width = "33%">
-   <img src=".README_images/91faea03.png" width = "33%">
-   <img src=".README_images/21cd8aaf.png" width = "33%">
+   <img src=".README_images/78cf253c.png" width = "49%">
+   <img src=".README_images/91faea03.png" width = "49%">
 </div>
 
 <div align="center">
-   <img src=".README_images/9210d9da.png" width = "33%">
-   <img src=".README_images/897a209d.png" width = "33%">
-   <img src=".README_images/7c5a41ff.png" width = "33%">
+   <img src=".README_images/21cd8aaf.png" width = "49%">
+   <img src=".README_images/9210d9da.png" width = "49%">
+</div>
+
+<div align="center">
+   <img src=".README_images/897a209d.png" width = "49%">
+   <img src=".README_images/7c5a41ff.png" width = "49%">
 </div>
